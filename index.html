@@ -155,6 +155,160 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-redis概述" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/uncategorized/redis%E6%A6%82%E8%BF%B0">redis概述</a>
+    </h1>
+  
+
+        
+        <a href="/uncategorized/redis%E6%A6%82%E8%BF%B0" class="archive-article-date">
+  	<time datetime="2021-07-29T08:04:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Redis-的安装-启动"><a href="#Redis-的安装-启动" class="headerlink" title="Redis 的安装 启动"></a>Redis 的安装 启动</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>docker pull redis</p>
+<p>检查镜像</p>
+<p>docker images</p>
+        
+          <a class="article-more-a" href="/uncategorized/redis%E6%A6%82%E8%BF%B0#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/uncategorized/redis%E6%A6%82%E8%BF%B0">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-redis整合SpringBoot" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/uncategorized/redis%E6%95%B4%E5%90%88SpringBoot">redis整合SpringBoot</a>
+    </h1>
+  
+
+        
+        <a href="/uncategorized/redis%E6%95%B4%E5%90%88SpringBoot" class="archive-article-date">
+  	<time datetime="2021-07-29T07:50:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Spring 框架为我们在持久层提供了很多的支持,也就是提供了Spring Data</p>
+        
+          <a class="article-more-a" href="/uncategorized/redis%E6%95%B4%E5%90%88SpringBoot#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/uncategorized/redis%E6%95%B4%E5%90%88SpringBoot">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-redis为什么这么快" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -177,53 +331,9 @@
       
         <p>众所周知，Redis在内存库数据库领域非常地火热，它极高的性能和丰富的数据结构为我们的开发提供了极大的便利。</p>
 <p>但我们也听说了，Redis是单线程的，为什么采用单线程的Redis也会如此之快呢？这篇文章我们来分析一下其中的缘由。</p>
-<p>其实，<strong>严格来说，Redis Server是多线程的，只是它的请求处理整个流程是单线程处理的。</strong>这一点我们一定要清楚了解到，不要单纯地认为Redis Server是单线程的！</p>
-<p>我们平时说的Redis单线程快是指它的请求处理过程非常地快！</p>
-<p>下面我们就来分下一下为什么请求处理使用单线程，依旧可以达到这么高的性能。</p>
-<p>Redis的性能非常之高，每秒可以承受10W+的QPS，它如此优秀的性能主要取决于以下几个方面：</p>
-<ul>
-<li><p>纯内存操作</p>
-</li>
-<li><p>多路复用机制</p>
-</li>
-<li><p>单线程</p>
-</li>
-<li><p>非CUP密集型任务</p>
-</li>
-</ul>
-<h1 id="纯内存操作"><a href="#纯内存操作" class="headerlink" title="纯内存操作"></a>纯内存操作</h1><p>Redis 是一个纯内存数据库，它的数据都存储在内存中，这意味着数据的操作都在内存中完成，这种操作是非常快的。</p>
-<p>同时由于Redis中有一个数据类型是Hash的，它的时间复杂度是O(1)，这意味着查找速度也非常快，另外Redis还有其他的数据类型，并使用高效的操作方式操作，并不会很耗内存</p>
-<h1 id="多路复用机制"><a href="#多路复用机制" class="headerlink" title="多路复用机制"></a>多路复用机制</h1><p>Redis是单线程，但是怎么处理多个客户端请求呢？</p>
-<p>这是利用了多路复用IO和非阻塞IO的机制，这个技术由操作系统实现提供，Redis可以方便地操作系统的API即可。Redis可以在单线程中监听多个Socket的请求，在任意一个Socket可读/可写时，Redis去读取客户端请求，在内存中操作对应的数据，然后再写回到Socket中。</p>
-<p>整个过程十分高效，Redis采用多路复用技术的事件驱动模型，保证在监听多个Socket请求的情况下，只对有活动的请求采取反应</p>
-<h1 id="单线程"><a href="#单线程" class="headerlink" title="单线程"></a>单线程</h1><ul>
-<li><p>没有上下文切换</p>
-</li>
-<li><p>没有访问共享变量加锁的性能损耗</p>
-</li>
-<li><p>开发和调试比较友好</p>
-</li>
-</ul>
-<h1 id="非CPU密集型任务"><a href="#非CPU密集型任务" class="headerlink" title="非CPU密集型任务"></a>非CPU密集型任务</h1><p>采用单线程的缺点很明显，无法使用多核CPU。Redis作者提到，由于Redis的大部分操作并不是CPU密集型任务，而Redis的瓶颈在于内存和网络带宽。</p>
-<p>在高并发请求下，Redis需要更多的内存和更高的网络带宽，否则瓶颈很容易出现在内存不够用和网络延迟等待的情况。</p>
-<p>当然，如果你觉得单个Redis实例的性能不足以支撑业务，Redis作者推荐部署多个Redis节点，组成集群的方式来利用多核CPU的能力，而不是在单个实例上使用多线程来处理。</p>
-<h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>上面介绍了单线程可以达到如此高的性能，并不是说它就没有缺点了。</p>
-<p><strong>单线程处理最大的缺点就是，如果前一个请求发生耗时比较久的操作，那么整个Redis就会阻塞住，其他请求也无法进来，直到这个耗时久的操作处理完成并返回，其他请求才能被处理到。</strong></p>
-<p>我们平时遇到Redis变慢或长时间阻塞的问题，90%也都是因为Redis处理请求是单线程这个原因导致的。</p>
-<p>所以，我们在使用Redis时，一定要避免非常耗时的操作，例如使用时间复杂度过高的方式获取数据、一次性获取过多的数据、大量key集中过期导致Redis淘汰key压力变大等等，这些场景都会阻塞住整个处理线程，直到它们处理完成，势必会影响业务的访问。</p>
-<p>我会在后期的文章中专门介绍具体有哪些场景会引发Redis阻塞的问题，并提供规避问题的方法和优化方案</p>
-<h1 id="多线程的优化"><a href="#多线程的优化" class="headerlink" title="多线程的优化"></a>多线程的优化</h1><p>在文章开头已经特别说明，Redis Server本身是多线程的，除了请求处理流程是单线程处理之外，Redis内部还有其他工作线程在后台执行，它负责异步执行某些比较耗时的任务，例如AOF每秒刷盘、AOF文件重写都是在另一个线程中完成的。</p>
-<p>而在Redis 4.0之后，Redis引入了lazyfree的机制，提供了unlink、flushall aysc、flushdb async等命令和lazyfree-lazy-eviction、lazyfree-lazy-expire等机制来异步释放内存，它主要是为了解决在释放大内存数据导致整个redis阻塞的性能问题。</p>
-<p>在删除大key时，释放内存往往都比较耗时，所以Redis提供异步释放内存的方式，让这些耗时的操作放到另一个线程中异步去处理，从而不影响主线程的执行，提高性能。</p>
-<p>到了Redis 6.0，Redis又引入了多线程来完成请求数据的协议解析，进一步提升性能。它主要是解决高并发场景下，单线程解析请求数据协议带来的压力。请求数据的协议解析由多线程完成之后，后面的请求处理阶段依旧还是单线程排队处理。</p>
-<p>可见，Redis并不是保守地认为单线程有多好，也不是为了使用多线程而引入多线程。Redis作者很清楚单线程和多线程的使用场景，针对性地优化，这是非常值得我们学习的。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>Redis使用单线程，配合IO多路复用技术，可以完成多个连接的请求处理。而且正是由于它的使用定位是内存数据库，这样几乎所有的操作都在内存中完成，它的性能可以达到非常之高。</p>
-<p>同时，单线程没有了线程上下文切换和访问共享资源加锁的性能损耗，而且单线程模型对程序的开发和调试非常友好，因此Redis使用单线程模型也就在情理之中了。</p>
-<p>Redis在最近的版本也对多线程进行了优化，用于解决释放大内存数据和请求数据协议解析对Redis产生的性能影响，进一步提升了Redis的性能。</p>
-<p>单线程结合上述场景可以达到非常高的性能，同时也存在耗时操作阻塞整个线程的问题，我们在使用Redis时要避免耗时过长的操作，才能更好地发挥Redis的性能。</p>
-<p>参考：<a target="_blank" rel="noopener" href="http://kaito-kidd.com/2020/06/28/why-redis-so-fast/">链接</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lonely-wolf/p/14254490.html">同样可以参考</a></p>
-
+        
+          <a class="article-more-a" href="/uncategorized/redis%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%B9%88%E5%BF%AB#more">more >></a>
+        
       
 
       
